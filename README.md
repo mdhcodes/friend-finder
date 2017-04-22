@@ -1,2 +1,2 @@
 # friend-finder
-Dating App - Node.js and Express.js Server
+Dating App - Node.js and Express.js Servers
