@@ -1,0 +1,25 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "Dating App - Node.js and Express.js Servers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdhcodes/friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdhcodes/friend-finder/issues"
+  },
+  "homepage": "https://github.com/mdhcodes/friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
