@@ -11,6 +11,11 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <style>
+      select:invalid { color: gray; }
+  </style>
+
 </head>
 <body>
 
@@ -29,9 +34,13 @@
 
   		<hr>
 
-  		<h3><strong>Question 1</strong></h3>
+      <!-- Option Placeholder Text -->
+      <!-- Thank You - https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box -->
+
+      <h3><strong>Question 1</strong></h3>
       <h4>You have high expectations for yourself and others.</h4>
-  	 	<select class="selection" id="q1">
+  	 	<select required id="q1">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -41,7 +50,8 @@
 
   		<h3><strong>Question 2</strong></h3>
       <h4>If you had to choose between going to a party and reading an interesting book, you'd go to the party.</h4>
-  	 	<select class="selection" id="q2">
+  	 	<select required id="q2">
+          <option value="">Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -51,7 +61,8 @@
 
   		<h3><strong>Question 3</strong></h3>
       <h4>You value quality over quantity.</h4>
-  	 	<select class="selection" id="q3">
+  	 	<select required id="q3">
+          <option value="">Select an Option</option>
           <option value="1">1 (Strongly Disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -61,7 +72,8 @@
 
   		<h3><strong>Question 4</strong></h3>
       <h4>You often say and do things without thinking about the consequences.</h4>
-  	 	<select class="selection" id="q4">
+  	 	<select required id="q4">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -71,7 +83,8 @@
 
   		<h3><strong>Question 5</strong></h3>
       <h4>You care about and enjoy helping others.</h4>
-  	 	<select class="selection" id="q5">
+  	 	<select required id="q5">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -81,7 +94,8 @@
 
   		<h3><strong>Question 6</strong></h3>
       <h4>You love adventure and navigating challenging situations.</h4>
-  	 	<select class="selection" id="q6">
+  	 	<select required id="q6">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -91,7 +105,8 @@
 
   		<h3><strong>Question 7</strong></h3>
       <h4>When you make a promise, you keep your word.</h4>
-  	 	<select class="selection" id="q7">
+  	 	<select required id="q7">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -101,7 +116,8 @@
 
   		<h3><strong>Question 8</strong></h3>
       <h4>You value kindness more than intelligence.</h4>
-  	 	<select class="selection" id="q8">
+  	 	<select required id="q8">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -111,7 +127,8 @@
 
   		<h3><strong>Question 9</strong></h3>
       <h4>You like being outdoors close to nature.</h4>
-  	 	<select class="selection" id="q9">
+  	 	<select required id="q9">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -121,7 +138,8 @@
 
   		<h3><strong>Question 10</strong></h3>
       <h4>You are an independent thinker and rarely let others influence your decisions.</h4>
-  	 	<select class="selection" id="q10">
+  	 	<select required id="q10">
+        <option value="">Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -140,7 +158,6 @@
     <p><a href="api/friends">API Friends List</a> | <a href="https://github.com/mdhcodes/friend-finder" target="_blank">GitHub Repo</a></p>
 
 	</div><!-- end container -->
-
 
 <script>
 
@@ -166,10 +183,7 @@
     answers.scores = surveyRes;
     console.log(answers);
 
-
   });
-
-
 
 </script>
 
